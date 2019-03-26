@@ -14,6 +14,7 @@ Choose from among 4 exercises about different topics and with various levels of 
  * An internet connection
  * A Microbit
  * Hairless-midiserial (download it here: http://projectgus.github.io/hairless-midiserial/)
+ * You can use headphones to improve the experience
 
 ## How to start
 * Connect the MicroBit and download the provided code: https://makecode.microbit.org/53398-89763-46381-34336
