@@ -26,7 +26,7 @@ What we would like to achieve throught this project is creating a tool for the m
 * Choose an exercise!
 
 
-## The code behind the exercises
+## The code behind the exercises 
 
 ## Exercises
  At the top of the page there's a set of instruction, whose language can be changed from Italian to English.
@@ -59,4 +59,4 @@ This exercise is the most complicated one and requires the user to have at least
 * More kinds of chords could be added to the third exercise (semi-diminished, dominant 7th chords...)
 
 #### Additional Info
-
+Codepen was used for Microbit's data management, for the modeling of musical aspects and for the interface. The app was uplodaded online using surge.sh.
