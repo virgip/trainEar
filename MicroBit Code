@@ -1,19 +1,5 @@
 
-//Code can be found also here designed  both with blocks and with code:https://makecode.microbit.org/53398-89763-46381-34336
+Code can be found also designed both with blocks and with code:
 
 
-
-
-input.onButtonPressed(Button.A, function () {
-    midi.toneOn(262)
-})
-input.onButtonPressed(Button.B, function () {
-    midi.toneOn(294)
-})
-input.onButtonPressed(Button.AB, function () {
-    midi.toneOn(330)
-})
-midi.useRawSerial()
-basic.forever(function () {
-    midi.pitchBend(input.acceleration(Dimension.X))
-})
+https://makecode.microbit.org/53398-89763-46381-34336
