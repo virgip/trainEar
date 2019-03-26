@@ -4,7 +4,7 @@
 Our fantastic web-app for relative pitch training that makes use of MicroBit's accelerometer turning it into a knob for playing simple music games. 
 
 Choose from among 4 exercises about different topics and with various levels of difficulty to improve and challenge your ability to recognise and reproduce different notes, pitches, intervals and chords! 
-
+ 
 
 ![Exercises](http://oi65.tinypic.com/wcjps5.jpg "Es")
 
@@ -14,5 +14,6 @@ Choose from among 4 exercises about different topics and with various levels of 
  * Hairless-midiserial (download it here: http://projectgus.github.io/hairless-midiserial/)
 
 ## How to start
-
-* Connect the MicroBit and 
+* Connect the MicroBit and download the provided code: https://makecode.microbit.org/53398-89763-46381-34336
+* Open hairless
+* Open the web-app: http://trainear-home.surge.sh/
