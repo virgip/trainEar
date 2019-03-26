@@ -26,14 +26,26 @@ Choose from among 4 exercises about different topics and with various levels of 
 
 
 
-### Pitch Reproduction 
+### Pitch Reproduction  
 
+Link:
+As for everyother exercise, at the top of the page there's a set of instruction, whose language can be changed from Italian to English.
+This is considered the easiest execises and the user just has to listen to a note and then try to reproduce the same note either with the same pitch or with a higher/lower one. The microbit's buttons are used to perform the same functions as the buttons on the interface. 
+The restart icon changes the note to take as referance and the pitch requested. 
 
 ### Interval Reproduction
+LINK:
+The idea behind this exercise is similar to the one of the previous one, but instead of reproducing the same note, the user has to find a note set to a specific distant from the given one. In order to help the users to learn better and to really improve their skills, it's possible to set three distict levels of difficulty, which determines the number of intervals that can be asked. 
+The microbit sound from an octave below the root of the requested interval.
 
 ### Chord Reproduction
+LINK:
+The large amount of possible choice is thought for giving the user exactly the kind of request he wants to go for. If no choice is made, the final selection is made randomly and the same happens in case of multiple choices.
+The choices can be made in random order. Once the user is satisfied with his selections, he has to press the red button in order to generate an actual request. If he/she decides to change the options, the red button has to be pressed to make the changes effective. 
+
 
 ### Read and Play the Note
+This exercise is the most complicated one and requires the user to have at least a relative pitch. 
 
 
 #### Additional Info
