@@ -1,5 +1,6 @@
 # trainEar
-<p align="center"><img width=12.5% src="(https://66.media.tumblr.com/561c299469a3f1eac6fcbb6c54950688/tumblr_inline_pozn7q1t1B1szlklo_540.png"></p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![title](https://66.media.tumblr.com/561c299469a3f1eac6fcbb6c54950688/tumblr_inline_pozn7q1t1B1szlklo_540.png "t")
+
 
 
 Our fantastic web-app for relative pitch training that makes use of MicroBit's accelerometer turning it into a knob for playing simple music games. 
@@ -7,7 +8,7 @@ Our fantastic web-app for relative pitch training that makes use of MicroBit's a
 Choose from among 4 exercises about different topics and with various levels of difficulty to improve and challenge your ability to recognise and reproduce different notes, pitches, intervals and chords! 
  
 
-![Exercises](http://oi65.tinypic.com/wcjps5.jpg "Es")
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Exercises](http://oi65.tinypic.com/wcjps5.jpg "Es")
 
 ## What do you need
  * An internet connection
