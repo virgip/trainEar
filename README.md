@@ -10,6 +10,9 @@ Choose from 4 exercises about different topics and with various levels of diffic
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Exercises](http://oi65.tinypic.com/wcjps5.jpg "Es")
 
+## Aim and Audiance
+
+
 ## What do you need
  * An internet connection
  * A Microbit
@@ -46,7 +49,10 @@ The choices can be made in random order. Once the user is satisfied with his sel
 
 
 ### Read and Play the Note
+LINK:
 This exercise is the most complicated one and requires the user to have at least a relative pitch. 
 
+#### Future Developement
 
 #### Additional Info
+
