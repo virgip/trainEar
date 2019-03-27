@@ -11,27 +11,27 @@ Choose from 4 exercises about different topics and with various levels of diffic
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Exercises](http://oi65.tinypic.com/wcjps5.jpg "Es")
 
 ## Aim and Audiance
-What we would like to achieve throught this project is creating a tool for the musician and the amateur which might come in handy when in need of improving the relative pitch skills; in doing so, we decided to create a nice and simple interface that is also everywhere accessible, provided the users has Microbit at disposal. The code is designed to be easily editable to accomodate different needs and experiences as for precision, difficulty level, and musical parameters.
+What we would like to achieve throught this project is creating a tool for the musician and the amateur which might come in handy when in need of improving the relative pitch skills; in doing so, we decided to create a nice and simple interface that is also everywhere accessible, provided the users has MicroBit at disposal. The code is designed to be easily editable to accomodate different needs and experiences as for precision, difficulty level, and musical parameters.
 
 ## What do you need
  * An internet connection
- * A Microbit
+ * A MicroBit
  * Hairless-midiserial (download it here: http://projectgus.github.io/hairless-midiserial/)
  * You can use headphones to improve the experience
 
 ## How to start
-* Connect the MicroBit and download the provided code: https://makecode.microbit.org/53398-89763-46381-34336
-* Open hairless
+* Connect MicroBit and inject the provided code, you can download it here: https://makecode.microbit.org/53398-89763-46381-34336
+* Open Hairless
 * Open the web-app: http://trainear-home.surge.sh/
 * Choose an exercise!
 
 
 ## The code behind the exercises 
- The core point of this project application is communicating with Mircobit, a microcontroller based on a small electronic board provided with leds, pins, and sensors. In particular, we exploited its accelerometer on one axis (X, the one cutting the longest side in two) to turn the device into a knob. Microbit is able to detect overall 129 different values rotating from the starting face-up position 90° clockwise and 90° counterclockwise. In any of the cases, the rotation position is mapped into a frequency value belonging to a frequency range, whose bandwidth varies according to the exercise: exercises requiring to find notes very far from one other split the bandwidth into several octaves, which allows to divide the 129 values into not more than half-semitones, while exercises working with smaller intervals let the range divide in a couple octaves (which means we may subdivide semitones much more times). The communication with Microbit takes advantage of the MIDI protocol, sending in particular MIDI bend-pitch signals to send the accelerometer's current value and MIDI tone-on signals when buttons are pressed. The web-app is triggered whenever a MIDI signal is sensed, and acts accordingly to the type of MIDI command received. A "pitch-shifter-oscillator" produces the sound controlled by Microbit's position, while pressing buttons on Microbit triggers useful functions for accomplishing the exercises goals. What the user is supposed to do is to rotate Microbit until this results into the note the games require to find from time to time, and then confirm that particular tone (i.e., Microbit's position) to be the answer to the request.
+ The core point of this project application is communicating with Mircobit, a microcontroller based on a small electronic board provided with leds, pins, and sensors. In particular, we exploited its accelerometer on one axis (X, the one cutting the longest side in two) to turn the device into a knob. MicroBit is able to detect overall 129 different values rotating from the starting face-up position 90° clockwise and 90° counterclockwise. In any of the cases, the rotation position is mapped into a frequency value belonging to a frequency range, whose bandwidth varies according to the exercise: exercises requiring to find notes very far from one other split the bandwidth into several octaves, which allows to divide the 129 values into not more than half-semitones, while exercises working with smaller intervals let the range divide in a couple octaves (which means we may subdivide semitones much more times). The communication with MicroBit takes advantage of the MIDI protocol, sending in particular MIDI bend-pitch signals to send the accelerometer's current value and MIDI tone-on signals when buttons are pressed. The web-app is triggered whenever a MIDI signal is sensed, and acts accordingly to the type of MIDI command received. A "pitch-shifter-oscillator" produces the sound controlled by MicroBit's position, while pressing buttons on MicroBit triggers useful functions for accomplishing the exercises goals. What the user is supposed to do is to rotate MicroBit until this results into the note the games require to find from time to time, and then confirm that particular tone (i.e., MicroBit's position) to be the answer to the request.
  
 ## Exercises
  At the top of the page there's a set of instruction, whose language can be changed from Italian to English.
- Microbit's buttons are used to perform the same functions as the buttons on the interface. 
+ MicroBit's buttons are used to perform the same functions as the buttons on the interface. 
 ### Pitch Reproduction  
 
 Link:
@@ -41,7 +41,7 @@ The restart icon changes the reference note and the target.
 ### Interval Reproduction
 LINK:
 The idea behind this exercise is similar to the one of the previous one, but instead of reproducing the same note, the user is asked to find a tone set to a specific distance from the given one. In order to help the users to learn better and to really improve their skills, it's possible to set three distinct levels of difficulty, which determine the number of intervals that can be asked. 
-Microbit's range starts from an octave below the root of the requested interval.
+MicroBit's range starts from an octave below the root of the requested interval.
 
 ### Chord Reproduction
 LINK:
@@ -60,4 +60,4 @@ This exercise is the most complicated one and requires the user to have at least
 * More kinds of chords could be added to the third exercise (semi-diminished, dominant 7th chords...)
 
 #### Additional Info
-Codepen was used for Microbit's data management, for the modeling of musical aspects and for the interface. We employed Hairless to provide MIDI connection through serial port. The app has been implemented using Javascript and was  uplodaded online using surge.sh.
+Codepen was used for MicroBit's data management, for the modeling of musical aspects and for the interface. We employed Hairless to provide MIDI connection through serial port. The app has been implemented using Javascript and was  uplodaded online using surge.sh.
