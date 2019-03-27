@@ -1,0 +1,272 @@
+@import url(https://fonts.googleapis.com/css?family=Patrick+Hand+SC);
+* {
+  box-sizing: border-box;
+  /*handy because so the padding, border etc are included in the total widith/height*/
+}
+
+#layout {
+  background-color: #FFF9F3;
+  border: 1vw solid #00AAE6;
+  width: 100%;
+  height: 100%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2vw;
+}
+
+#title {
+  font-family: 'Patrick Hand SC', cursive;
+  margin-top: 2vw;
+  margin-botton: 2vw;
+  text-align: center;
+  color: #FFA365;
+  font-size: 5vw;
+}
+
+.instruction-box {
+  position: relative;
+  width: 80%;
+  height: 23vw;
+  left: 10%;
+  margin-top: 4vw;
+  marigin-left: 4vw;
+  margin-bottom: 8vw;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border: solid 2px #2FC9FF;
+}
+
+.icon {
+  padding: 1.3vw;
+  left: 50%;
+  transform: translate(-50%);
+  color: #027B98;
+  cursor: pointer;
+}
+
+#language-icon {
+  position: absolute;
+}
+
+#languageIconText {
+  margin-top: 4vw;
+  font-size: 1.2vw;
+}
+
+.icons-text {
+  position: relative;
+  text-align: center;
+  display: block;
+  margin-top: 1vw;
+  font-size: 2vw;
+  color: #027B98;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.box {
+  position: relative;
+  width: 100%;
+  height: 20vw;
+  display: inline-flex;
+}
+
+#instruction {
+  color: #00AAE6;
+  font-size: 1.5vw;
+  padding: 2vw 1vw 20vw 3vw;
+  position: relative;
+  bottom: 2.5%;
+}
+
+.icons-text {
+  position: relative;
+  text-align: center;
+  display: block;
+  margin-top: 1vw;
+  font-size: 1.2vw;
+  color: #027B98;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.section {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 10vw;
+  margin: 3vw 0 3vw 1.5vw;
+}
+
+.button {
+  justify-content: center;
+  background: transparent;
+  height: 8vw;
+  width: 15vw;
+  padding: 1vw 1vw 1vw 1vw;
+  /*top, right, bottom, left*/
+  margin: 2vw 1vw;
+  transition: all .5s ease;
+  color: #41403E;
+  letter-spacing: 1px;
+  outline: none;
+  color: #027B98;
+  border: solid 2px #FFA365;
+  font-size: 2.5vw;
+  box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  /*
+  Above is shorthand for:
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  border-bottom-right-radius: 225px 15px;
+  border-bottom-left-radius:15px 255px;
+  */
+}
+
+.fade:hover {
+  /* ":" means active link*/
+  box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3);
+}
+
+#home-icon {
+  position: relative;
+  display: inline-block;
+  transform: translate(-50%, -50%);
+  left: 5%;
+  margin-top: 8vw;
+  text-align: center;
+  -webkit-text-stroke: 0.05vw #FFF9F3;
+  /*icon border to make them look lighter*/
+}
+
+#answerButton {
+  position: relative;
+  left: 43%;
+  font-size: 2vw;
+  margin-bottom: 5vw;
+}
+
+.box {
+  position: relative;
+  width: 100%;
+  height: 14vw;
+  display: inline-flex;
+}
+
+.reset-icons {
+  position: relative;
+  display: inline-block;
+  width: 10vw;
+  height: 30vw;
+  margin-top: 4vw;
+  text-align: center;
+  -webkit-text-stroke: 0.05vw #FFF9F3;
+  /*icon border to make them look lighter*/
+}
+
+/*DROPDOWN SINGLE SELECTION*/
+/**/
+/* Dropdown Button */
+.dropbtn {
+  width: 14vw;
+  height: 5vw;
+  background: transparent;
+  color: #027B98;
+  border: solid 2px #FFA365;
+  box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  transition: all .5s ease;
+  font-size: 2vw;
+  justify-content: center;
+  background: transparent;
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 4vw;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default)*/
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FFF9F3;
+  margin-left: 0.65vw;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-top: -4vw;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #FFA365;
+}
+
+#harmonyScale {
+  margin-left: 14vw;
+}
+
+/*ORIGINAL MULTIPLE SELECTION CODE: https://codepen.io/yying6/pen/KAHcF */
+/* hide checkbox */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* if checkbox is checked, then do these things */
+input[type="checkbox"]:checked + label {
+  color: #D22800;
+}
+
+label:hover {
+  background-color: #2FC9FF;
+  cursor: pointer;
+  /* transitions and animations */
+  -webkit-transition: color .5s ease;
+  -moz-transition: color .5s ease;
+  -ms-transition: color .5s ease;
+  -o-transition: color .5s ease;
+  transition: color .5s ease;
+}
+
+label {
+  color: #027B98;
+  padding: 0 4vw;
+}
+
+#modeDrpdn {
+  width: 16vw;
+  padding: 0 0;
+}
+
+#bigRedButton {
+  width: 10vw;
+  height: 8vw;
+  line-height: 4vw;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+  background: #D22800;
+  margin: 2vw 0 3vw 45vw;
+  box-shadow: 0 1vw #B52805;
+}
+#bigRedButton:active {
+  box-shadow: 0 0 #B52805;
+  transform: translate(0px, 1.3vw);
+  transition: all 0.1s ease-out;
+}
+
+#redButtonText {
+  margin-left: 2vw;
+}
+
+#centralText {
+  margin-top: 2vw;
+  margin-bottom: 4vw;
+}
