@@ -11,7 +11,7 @@ Choose from 4 exercises about different topics and with various levels of diffic
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Exercises](http://oi65.tinypic.com/wcjps5.jpg "Es")
 
 ## Aim and Audiance
-What we would like to achieve throught this project is creating a tool for the musician and the amateur which might come in handy when in need of improving the relative pitch skills; in doing so, we decided to create a nice and simple interface that is also everywhere accessible. The code is designed to be easily editable to accomodate different needs and experiences as for precision, difficulty level, and musical parameters.
+What we would like to achieve throught this project is creating a tool for the musician and the amateur which might come in handy when in need of improving the relative pitch skills; in doing so, we decided to create a nice and simple interface that is also everywhere accessible, provided the users has Microbit at disposal. The code is designed to be easily editable to accomodate different needs and experiences as for precision, difficulty level, and musical parameters.
 
 ## What do you need
  * An internet connection
@@ -51,7 +51,7 @@ The choices can be made in random order. Once the user is satisfied with their s
 
 ### Read and Play the Note
 LINK:
-This exercise is the most complicated one and requires the user to have at least a good relative pitch training. Indeed, in this case we require the user guesses the target note just by reading it on screen. This target note is chosen by chance by a simulated slot machine. 
+This exercise is the most complicated one and requires the user to have at least a good relative pitch training, but actually absolute pitch is what comes about within this exercise. Indeed, in this case we require the user guesses the target note just by reading it on screen. This target note is chosen by chance by a simulated slot machine. 
 
 #### Future Developement
 * A gyroscope will be connected to MicroBit, in order to increase the amount of values at disposal for the spanning range.
