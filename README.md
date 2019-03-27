@@ -27,7 +27,8 @@ What we would like to achieve throught this project is creating a tool for the m
 
 
 ## The code behind the exercises 
-
+ The core point of this project application is communicating with Mircobit, a microcontroller based on a small electronic board provided with leds, pins, and sensors. In particular, we exploited its accelerometer on one axis (X, the one cutting the longest side in two) to turn the device into a knob. Microbit is able to detect overall 129 different values rotating from the starting face-up position 90° clockwise and 90° counterclockwise. In any of the cases, the rotation position is mapped into a frequency value belonging to a frequency range, whose bandwidth varies according to the exercise: exercises requiring to find notes very far from one other split the bandwidth into several octaves, which allows to divide the 129 values into not more than half-semitones, while exercises working with smaller intervals let the range divide in a couple octaves (which means we may subdivide semitones much more times). The communication with Microbit takes advantage of the MIDI protocol, sending in particular MIDI bend-pitch signals to send the accelerometer's current value and MIDI tone-on signals when buttons are pressed. The web-app is triggered whenever a MIDI signal is sensed, and acts accordingly to the type of MIDI command received. A "pitch-shifter-oscillator" produces the sound controlled by Microbit's position, while pressing buttons on Microbit triggers useful functions for accomplishing the exercises goals. What the user is supposed to do is to rotate Microbit until this results into the note the games require to find from time to time, and then confirm that particular tone (i.e., Microbit's position) to be the answer to the request.
+ 
 ## Exercises
  At the top of the page there's a set of instruction, whose language can be changed from Italian to English.
  Microbit's buttons are used to perform the same functions as the buttons on the interface. 
@@ -59,4 +60,4 @@ This exercise is the most complicated one and requires the user to have at least
 * More kinds of chords could be added to the third exercise (semi-diminished, dominant 7th chords...)
 
 #### Additional Info
-Codepen was used for Microbit's data management, for the modeling of musical aspects and for the interface. The app was uplodaded online using surge.sh.
+Codepen was used for Microbit's data management, for the modeling of musical aspects and for the interface. We employed Hairless to provide MIDI connection through serial port. The app has been implemented using Javascript and was  uplodaded online using surge.sh.
