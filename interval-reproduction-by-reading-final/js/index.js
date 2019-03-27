@@ -10,6 +10,7 @@ var offset = 15;
 
 var semitonesPerOctave = 12;
 var mircoValues = 129;
+var psoFrequencies;
 
 var firstNegBend = 15360;
 var lastNegBend = 16368;
@@ -403,7 +404,7 @@ function generateRequest(r) { //the argument is the note given as reference
   pso.frequency.value = givenFreq;
 
   // These are the frequencies for the selected range in the MIDI spectrum
-  var psoFrequencies = [firstFreq];
+  psoFrequencies = [firstFreq];
   var semitoneSubdivisions = Math.floor(mircoValues / notesNumber);
   var spread = mircoValues % notesNumber;
   for (i = 0; i < Math.floor(mircoValues / 2) - spread; i++)
@@ -416,7 +417,7 @@ function generateRequest(r) { //the argument is the note given as reference
   console.log("Given note:", givenNote, "(" + givenFreq + "Hz)");
   
   document.getElementById("repeatButton").addEventListener("click", function() {
-    playNote(givenNote);
+    playNote(givenFreq);
   });
   
   
