@@ -25,7 +25,7 @@ What we would like to achieve throught this project is creating a tool for the m
 * Open the web-app: http://trainear-home.surge.sh/
 * Choose an exercise
 * Make sure Bluetooth is activated on your device
-* Connect Micro Bit via Bluetooth pressing the "Search device" button on top right and selecting "BBC Micro Bit [device code]" from the BT device list, where "[device code]" is a particular code for identifying your Micro Bit as a BT device.
+* Connect Micro Bit via Bluetooth pressing the "Search device" button on top right and selecting "BBC Micro Bit [device code]" from the BT devices list, where "[device code]" is a particular code for identifying your Micro Bit as a BT device.
 * Once the "CONNECTED!" string appears right below the "Search device" button, you are ready to play!
 
 
