@@ -3,21 +3,21 @@
 
 
 
-Our fantastic web-app for relative pitch training that makes use of Micro Bit's accelerometer turning it into a knob for playing simple music games. 
+A web-app for relative pitch training that makes use of Micro Bit's accelerometer turning it into a knob for playing simple music games. 
 
-Choose among 4 exercises about different topics and with various levels of difficulty to improve and challenge your ability to recognise and reproduce different notes, pitches, intervals and chords! 
+Choose among 4 exercises about different topics and with various levels of difficulty to improve and challenge your ability to recognise and reproduce different notes, pitches, intervals and chords!
  
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Exercises](http://oi65.tinypic.com/wcjps5.jpg "Es")
 
-## Aim and Audience
+## Aim and audience
 What we would like to achieve throught this project is creating a tool for the musician and the amateur which might come in handy when in need of improving the relative pitch skills; in doing so, we decided to create a nice and simple interface that is also everywhere accessible, provided the users has Micro Bit at disposal. The code is designed to be easily editable to accomodate different needs and experiences as for precision, difficulty level, and musical parameters.
 
 ## What you need
  * An internet connection
  * A Micro Bit
  * A device provided with Bluetooth connection
- * You can use headphones to improve the experience
+ * Headphones are recommended to improve the experience
 
 ## How to start
 * Connect Micro Bit via USB to your device and inject the provided code, you can download it here: https://makecode.microbit.org/53398-89763-46381-34336
@@ -25,8 +25,8 @@ What we would like to achieve throught this project is creating a tool for the m
 * Open the web-app: http://trainear-home.surge.sh/
 * Choose an exercise
 * Make sure Bluetooth is activated on your device
-* Connect Micro Bit via Bluetooth pressing the "Search device" button on top right and selecting "BBC Micro Bit [device code]" from the BT devices list, where "[device code]" is a particular code for identifying your Micro Bit as a BT device.
-* Once the "CONNECTED!" string appears right below the "Search device" button, you are ready to play!
+* Connect Micro Bit via Bluetooth pressing the "Search device" button on top right and selecting "BBC micro:bit [device code]" from the BT devices list, where "[device code]" is a particular code for identifying your Micro Bit as a BT device.
+* Once the "Connected!" string appears right below the "Search device" button, you are ready to play!
 
 
 ## The code behind the exercises 
@@ -37,20 +37,20 @@ What we would like to achieve throught this project is creating a tool for the m
  Micro Bit's buttons are used to perform the same functions as the buttons on the interface. 
  
 ### Pitch Reproduction  
-Link:
+Link: http://trainear-pitch.surge.sh/
 This is considered the easiest execise: the user has just to listen to a note and then try to reproduce the same note either with the same pitch or with a higher/lower one (different octaves), accordingly to what is written as request each different time.
 
 ### Interval Reproduction
-Link:
+Link: http://trainear-intervals.surge.sh/
 The idea behind this exercise is similar to the one of the previous one, but instead of reproducing the same note, the user is asked to find a tone set to a specific distance from the given one. In order to help the users to learn better and to really improve their skills, it's possible to set three distinct levels of difficulty, which determine the number of intervals that can be asked. The interval is chosen randomply by a simulated slot machine.
 
 ### Chord Reproduction
-Link:
+Link: http://trainear-chord.surge.sh/
 During this exercise, the user is asked to select the notes appearing in a specific chord. The large amount of possible choices is aimed to give the user exactly the kind of request they want to go for, as for a set of musical parameters (harmony scale, mode, scale root, chord root and chor type), to build the chord.
 The choices can be made in random order. Once the user is satisfied with their selections, they may press the red button in order to generate an actual request. The system then performs a random choice among all the selected values, one for each parameter, to finally build the chord. If no choice is made, the final selection is performed randomly among all the possible values for all the parameters. If the user decides to change the options, the red button has to be pressed again to make the changes effective and generate a new chord.
 
 ### Read and Play the Note
-Link:
+Link: http://trainear-readandplay.surge.sh/
 This exercise is the most complicated one and requires the user to have at least a good relative pitch training, but actually absolute pitch is what comes about within this exercise. Indeed, in this case we require the user guesses the target note just by reading it on screen. This target note is chosen by chance by a simulated slot machine. Here's a trick: if you don't own absolute pitch, but all you need is a reference, known, note, you might press the "PLAY" button before the knob is connected via Bluetooth: this will allow you to listen to the starting note for the pitch-shifter-oscillator, which is an A4! ;j
 
 #### Future Developement
