@@ -21,11 +21,12 @@ What we would like to achieve throught this project is creating a tool for the m
 
 ## How to start
 * Connect Micro Bit via USB to your device and inject the provided code, you can download it here: https://makecode.microbit.org/53398-89763-46381-34336
+* Disconnect the USB cable from Micro Bit and plug Micro Bit to its battery supply.
 * Open the web-app: http://trainear-home.surge.sh/
 * Choose an exercise
 * Make sure Bluetooth is activated on your device
-* Connect Micro Bit via Bluetooth pressing the "Search device" button on top right
-* You are ready to play!
+* Connect Micro Bit via Bluetooth pressing the "Search device" button on top right and selecting "BBC Micro Bit [device code]" from the BT device list, where "[device code]" is a particular code for identifying your Micro Bit as a BT device.
+* Once the "CONNECTED!" string appears right below the "Search device" button, you are ready to play!
 
 
 ## The code behind the exercises 
