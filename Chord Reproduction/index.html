@@ -1,0 +1,212 @@
+<!-- This line removes any default padding and style. You might only need one of these values set -->
+<link rel="stylesheet" type="text/css" href="CRstyle.css" />
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<div id=layout>
+
+  <i id="reset" class="reset-icons icon fas fa-undo-alt fa-xs"><div class="icons-text">Reset Options</div></i>
+
+  <a href="http://trainear-home.surge.sh/"> <i class="reset-icons icon fas fa-home fa-xs"><div  class="icons-text" >Home</div></i></a>
+
+  <div id="title">Chord Reproduction</div>
+<button id ="speakerModeButton" class= "button fade">LOUDSPEAKER MODE</button>
+  <button id ="pianoModeButton" class= "button fade">PIANO MODE</button>
+  <button id="searchButton" class= "button fade" onClick="searchDevice()">Search device</button>
+  <div id="properties" class="properties inactive">
+    <div class="property">
+      <span id="connected" class="value"></span></div>
+  </div>
+
+  <div class="instruction-box"><i id="language-icon" class="icon fas fa-language fa-1.8x"></i>
+    <span id="languageIconText" class="icons-text">CHANGE LANGUAGE ITA|ENG</span>
+    <div id="instruction"></div>
+  </div>
+
+  <i id="hide-graph" class="icon far fa-lightbulb" onclick="hideGraph()"></i>
+
+  <div id="harmonyScale" class="dropdown">
+    <button class="dropbtn">Scale Harmony</button>
+    <div class="dropdown-content">
+      <input id="maS" class="hsElm" type="checkbox" name="harmonyS" value="MaS"><label for="maS">Major</label><br>
+      <input id="miS" class="hsElm" type="checkbox" name="harmonyS" value="MiS"><label for="miS">Minor</label><br>
+    </div>
+  </div>
+
+  <div id="mode" class="dropdown">
+    <button class="dropbtn">Mode</button>
+    <div id="modeDrpdn" class="dropdown-content">
+      <input id="io" class="modeElm" type="checkbox" name="Mode" value="Io"><label for="io">Ionian</label><br>
+      <input id="dor" class="modeElm" type="checkbox" name="Mode" value="Dor"><label for="dor">Dorian</label><br>
+      <input id="ph"  class="modeElm" type="checkbox" name="Mode" value="Ph"><label for="ph">Phrygian</label><br>
+      <input id="ly" class="modeElm" type="checkbox" name="Mode" value="Ly"><label for="ly">Lydian</label><br>
+      <input id="mix" class="modeElm" type="checkbox" name="Mode" value="Mix"><label for="mix">Mixolydian</label><br>
+      <input id="aeo" class="modeElm" type="checkbox" name="Mode" value="Aeo"><label for="aeo">Aeolian</label><br>
+      <input id="loc" class="modeElm" type="checkbox" name="Mode" value="Loc"><label for="loc">Locrian</label><br>
+    </div>
+  </div>
+
+  <div id="rootScale" class="dropdown">
+    <button class="dropbtn">Scale Root</button>
+    <div class="dropdown-content">
+      <input id="c" class="rsElm" type="checkbox" name="RS" value="C"><label for="c">C</label><br>
+      <input id="cs" class="rsElm" type="checkbox" name="RS" value="CS"><label for="cs">C#</label><br>
+      <input id="db" class="rsElm" type="checkbox" name="RS" value="DB"><label for="db">Db</label><br>
+      <input id="d" class="rsElm" type="checkbox" name="RS" value="D"><label for="d">D</label><br>
+      <input id="ds" class="rsElm" type="checkbox" name="RS" value="DS"><label for="ds">D#</label><br>
+      <input id="eb" class="rsElm" type="checkbox" name="RS" value="EB"><label for="eb">Eb</label><br>
+      <input id="e" class="rsElm" type="checkbox" name="RS" value="E"><label for="e">E</label><br>
+      <input id="f" class="rsElm" type="checkbox" name="RS" value="F"><label for="f">F</label><br>
+      <input id="fs" class="rsElm" type="checkbox" name="RS" value="FS"><label for="fs">F#</label><br>
+      <input id="gb" class="rsElm" type="checkbox" name="RS" value="GB"><label for="gb">Gb</label><br>
+      <input id="g" class="rsElm" type="checkbox" name="RS" value="G"><label for="g">G</label><br>
+      <input id="gs" class="rsElm" type="checkbox" name="RS" value="GS"><label for="gs">G#</label><br>
+      <input id="ab" class="rsElm" type="checkbox" name="RS" value="AB"><label for="ab">Ab</label><br>
+      <input id="a" class="rsElm" type="checkbox" name="RS" value="A"><label for="a">A</label><br>
+      <input id="as" class="rsElm" type="checkbox" name="RS" value="AS"><label for="as">A#</label><br>
+      <input id="bb" class="rsElm" type="checkbox" name="RS" value="BB"><label for="bb">Bb</label><br>
+      <input id="b" class="rsElm" type="checkbox" name="RS" value="B"><label for="b">B</label><br>
+    </div>
+  </div>
+
+  <div id="rootChord" class="dropdown">
+    <button class="dropbtn">Chord Root</button>
+    <div class="dropdown-content">
+      <input id="cc" class="RCElm" type="checkbox" name="RC" value="CC"><label for="cc"> I</label><br>
+      <input id="csc" class="RCElm" type="checkbox" name="RC" value="CSC"><label for="csc">II</label><br>
+      <input id="dc" class="RCElm" type="checkbox" name="RC" value="DC"><label for="dc">III</label><br>
+      <input id="dsc" class="RCElm" type="checkbox" name="RC" value="DSC"><label for="dsc">IV</label><br>
+      <input id="ec" class="RCElm" type="checkbox" name="RC" value="EC"><label for="ec">V</label><br>
+      <input id="fc" class="RCElm" type="checkbox" name="RC" value="FC"><label for="fc">VI</label><br>
+      <input id="fsc" class="RCElm" type="checkbox" name="RC" value="FSC"><label for="fsc">VII</label><br>
+    </div>
+  </div>
+
+  <div id="harmonyChord" class="dropdown">
+    <button class="dropbtn">Chord Type</button>
+    <div class="dropdown-content">
+      <input id="maC" class="hcElm" type="checkbox" name="cC" value="MaC"><label for="maC">Triad</label><br>
+      <input id="miC" class="hcElm" type="checkbox" name="hC" value="MiC"><label for="miC">Quadriad</label><br>
+    </div>
+  </div>
+
+  <img id="victoryPic" src="https://66.media.tumblr.com/3ea5944d49448a7bd53f8eaeeb066503/tumblr_pww990wL6J1tt7f73o3_1280.png" alt="you-rock">
+  <img id="correctPic" src="https://66.media.tumblr.com/5ad7ab86849465aa0e348b6bd94a61fb/tumblr_pww990wL6J1tt7f73o2_1280.png" alt="correct">
+  <img id="nopePic" src="https://66.media.tumblr.com/416058acf424dfad368044bba4038bf7/tumblr_pww990wL6J1tt7f73o1_1280.png" alt="try-again">
+
+  <div id="graph-box">
+    <img id="clef" src="https://66.media.tumblr.com/071966bd549929223505c69d96f91682/tumblr_ptnjqvZyIw1tt7f73o1_1280.png" alt="Clef" >
+
+    <div id="pent-box">
+      <div id="extraline2" class="extra-line"></div>
+          <div class="pent-line"></div>
+          <div class="pent-line"></div>
+          <div class="pent-line"></div>
+          <div class="pent-line"></div>
+          <div class="pent-line"></div>
+          <div id="extraline1"class="extra-line"></div>
+    </div>
+    <div id="note-box">
+      <div class="b2 note"></div>
+      <div class="a2 note"></div>
+      <div class="g2 note"></div>
+      <div class="f2 note"></div>
+      <div class="e2 note"></div>
+      <div class="d2 note"></div>
+      <div class="c2 note"></div>
+      <div class="b1 note"></div>
+      <div class="a1 note"></div>
+      <div class="g1 note"></div>
+      <div class="f1 note"></div>
+      <div class="e1 note"></div>
+      <div class="d1 note"></div>
+      <div class="c1 note"></div>
+    </div>
+
+
+    <div id="flatBox">
+      <div id="b2Modified" class=" flat" ></div>
+      <div id="a2Modified" class="flat"></div>
+      <div id="g2Modified" class="flat"></div>
+      <div id="f2Modified" class="flat"></div>
+      <div id="e2Modified"class=" flat"></div>
+      <div id="d2Modified" class=" flat"></div>
+      <div id="c2Modified"class=" flat"></div>
+      <div id="b1Modified" class=" flat" ></div>
+      <div id="a1Modified" class="flat"></div>
+      <div id="g1Modified" class="flat"></div>
+      <div id="f1Modified" class="flat"></div>
+      <div id="e1Modified"class=" flat"></div>
+      <div id="d1Modified" class=" flat"></div>
+      <div id="c1Modified"class=" flat"></div>
+    </div>
+
+
+
+    <div id="name-box">
+                    <div id= "bn2" class="b2 name"></div>
+                    <div id= "an2" class="a2 name"></div>
+                    <div id= "gn2" class="g2 name"></div>
+                    <div id= "fn2" class="f2 name"></div>
+                    <div id= "en2" class="e2 name"></div>
+                    <div id= "dn2" class="d2 name"></div>
+                    <div id= "cn2" class="c2 name"></div>
+                    <div id= "bn1" class="b1 name"></div>
+                    <div id= "an1" class="a1 name"></div>
+                    <div id= "gn1" class="g1 name"></div>
+                    <div id= "fn1" class="f1 name"></div>
+                    <div id= "en1" class="e1 name"></div>
+                    <div id= "dn1" class="d1 name"></div>
+                    <div id= "cn1" class="c1 name"></div>
+          </div>
+
+
+  </div>
+
+  <div id="bigRedButton"></div>
+
+  <div id="redButtonText" class="icons-text">PRESS THE BUTTON AND GENERATE A CHORD!</div>
+
+  <i id="hide-freq" class="icon far fa-lightbulb" ></i>
+
+  <div id= "showFreq">Current Frequency: <span class='value'></span></div>
+
+
+
+  <div class="section">
+
+    <button id ="repeatButton" class= "button fade">CHORD</button>
+    <button id ="playStopButton" class= "button fade" >PLAY</button>
+    <button id= "answerButton" class= "button fade">SET ANSWER</button>
+
+    <div class="box">
+      <div class="errorBox">
+        <svg class="meter">
+          <circle id="meter-left" r="96" cx="135" cy="142" />
+            <circle id="meter-right" r="100" cx="135" cy="150" />
+          <circle id="meter-center" r="96" cx="136" cy="142" />
+
+          <polygon id="meter-clock"points="129,145 210,90 145,145"/>
+          <circle id="meter-circle" r="10" cx="137" cy="145" />
+          <input  type="range" min="0" max="100">
+        </svg>
+      </div>
+    </div>
+
+
+  </div>
+  <div class="centralText percentageError" >Too low! &emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;Too high!</div>
+
+
+
+  <div id="centralText" class="icons-text">How to use Micro Bit's buttons: Press <b>A</b> to set the answer; press <b>B</b> to listen again to the request; press and hold one between button <b>A</b> and button <b>B</b> to start/stop the Micro Bit's sound</div>
+
+</div>
+
+<meta charset="UTF-8">
+<script language="javascript" type="text/javascript" src="microBit.js"></script>
+
+<!-- Uncomment lines below to include extra p5 libraries -->
+<!-- <script language="javascript" src="libraries/p5.sound.js"></script>-->
+<script language="javascript" type="text/javascript" src="CRscript.js"></script>
