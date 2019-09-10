@@ -1,0 +1,563 @@
+@import url(https://fonts.googleapis.com/css?family=Patrick+Hand+SC);
+
+*{
+  box-sizing:border-box; /*handy because so the padding, border etc are included in the total widith/height*/
+
+}
+
+#layout {
+  background-color:#FFF9F3;
+   border: 1vw solid #00AAE6 ;
+    width:100%;
+
+ 	font-family: 'Raleway', sans-serif;
+	font-size: 2vw;
+}
+
+ #title{
+   font-family: 'Patrick Hand SC', cursive;
+    margin-top: 2vw;
+   margin-botton: 2vw;
+    text-align:center;
+    color:#FFA365;
+    font-size:5vw;
+  }
+  #speakerModeButton{
+    position:absolute;
+    width: 8vw;
+    height:5vw;
+    left:10%;
+    font-size: 0.7vw;
+   top:15%;
+     border-radius: 50%;
+  }
+#pianoModeButton {
+  position:absolute;
+  width: 6vw;
+  height:5vw;
+  left:80%;
+  font-size: 1vw;
+ top:15%;
+   border-radius: 50%;
+}
+
+/*SLOT MACHINE*/
+
+canvas{
+  position: relative;
+margin-left: 10vw;
+margin-top: 0vw;
+  width: 30%;
+  height: 200px;
+  left: 0;
+  top: 0;
+  background:transparent;
+
+
+}
+
+#startButton{
+
+margin-left: -26vw;
+margin-top: -5.9vw;
+
+}
+
+
+
+
+.instruction-box{
+ position:relative;
+    width:80%;
+  height: 11vw;
+  left: 10%;
+  margin-top: 4vw;
+  marigin-left: 4vw;
+  margin-bottom:3vw;
+   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+   border:solid 2px #2FC9FF;
+}
+
+.icon {
+  padding: 1.3vw;
+  left: 50%;
+  transform: translate(-50%);
+  color: #027B98;
+  cursor: pointer;
+}
+
+#language-icon{ position: absolute;
+  margin-top: -0.2vw;
+  font-size: 2vw;
+  padding: 0vw;
+}
+
+
+#languageIconText{
+  margin-top:0.5vw;
+  margin-left: -20vw;
+}
+
+.icons-text{
+   position: relative;
+  text-align: center;
+  display: block;
+  margin-top:1vw;
+  font-size: 2vw;
+  color: #027B98;
+ font-family: Arial, Helvetica, sans-serif;
+
+}
+.box{
+  position: relative;
+ width: 100%;
+  height: 20vw;
+  display: inline-flex;
+  margin-top:5vw;
+
+}
+
+#instruction {
+  color:  #00AAE6;
+  font-size: 1vw;
+  padding: 1vw 1vw 0 3vw;
+   position: relative;
+
+
+}
+
+
+.icons-text{
+   position: relative;
+  text-align: center;
+  display: block;
+  margin-top:1vw;
+  font-size: 1vw;
+  color: #027B98;
+ font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.section{
+    display:inline-flex;
+    flex-direction:row;
+    justify-content:center;
+    width:100%;
+  height: 6vw;
+  marigin left: 4vw;
+  margin-top:1vw;
+
+
+}
+
+  .button{
+      justify-content:center;
+      background:transparent;
+       height: 4vw;
+  width: 7.5vw;
+
+      padding:1vw 1vw 1vw 1vw; /*top, right, bottom, left*/
+      margin:-2vw 1vw;
+      transition:all .5s ease;
+      color:#41403E;
+
+      letter-spacing:1px;
+      outline:none;
+      color: #027B98;
+       border:solid 2px #FFA365;
+      font-size: 1.5vw;
+      box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);
+      border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+      /*
+      Above is shorthand for:
+      border-top-left-radius: 255px 15px;
+      border-top-right-radius: 15px 225px;
+      border-bottom-right-radius: 225px 15px;
+      border-bottom-left-radius:15px 255px;
+      */}
+
+       .fade:hover{ /* ":" means active link*/
+         box-shadow:2px 8px 4px -6px hsla(0,0%,0%,.3);
+      }
+
+
+
+#playStopButton {
+}
+
+#answerButton{
+ position:relative;
+
+  font-size: 1vw;
+
+
+}
+
+.box{
+  position: relative;
+ width: 100%;
+  height: 20vw;
+  display: inline-flex;
+
+}
+
+
+.home-icons{
+   position: absolute;
+  display: inline-block;
+ width: 1vw;
+  height: 3vw;
+left: 6%;
+ padding: 4vw;
+  text-align: center;
+ -webkit-text-stroke: 0.05vw #FFF9F3; /*icon border to make them look lighter*/
+}
+
+
+
+
+
+/*Styling Selectbox*/
+.dropdown {
+  width: 8vw;
+   position: absolute;
+  background:transparent;
+  color: #027B98;
+   border:solid 2px #FFA365;
+      box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);
+      border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  transition: all .5s ease;
+  font-size:1.5vw;
+  height: 4vw;
+   padding:0 0.5vw 0 1vw;
+  justify-content:center;
+      background:transparent;
+  text-align: center;
+  vertical-align: middle;
+    margin-left: 8vw;
+
+
+}
+.dropdown .select {
+    cursor: pointer;
+    display: block;
+  margin-top:1.2vw;
+
+
+}
+
+.dropdown:hover {
+
+cursor:pointer;
+}
+
+.dropdown .dropdown-menu { /*dropdown choices*/
+      background-color: #FFF9F3;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    margin-top: 0.2vw;
+    border-radius: 0 1px 5px 5px;
+    display: none;
+    z-index: 1;
+
+}
+.dropdown .dropdown-menu li {
+    padding: 10px;
+    transition: all .2s ease-in-out;
+    cursor: pointer
+}
+.dropdown .dropdown-menu {
+    padding: 0;
+    list-style: none
+}
+.dropdown .dropdown-menu li:hover {
+    color: #FFA365;
+}
+
+
+.centralText{
+
+  margin-bottom:4vw;
+}
+
+#repeatButton{
+  margin-left: 35vw;
+}
+#randg-box{
+  width:100%;
+  height:20vw;
+
+  display: inline-flex;
+}
+
+#hide-graph{
+
+position: absolute;
+  left:20%;
+}
+#hide-freq{
+ position: absolute;
+  left:80%;
+  visibility:visible;
+  padding: 0 0 2vw;
+
+  z-index:30;
+}
+#graph-box{
+     width: 25vw;
+    height: 30vw;
+    display: inline-flex;
+
+
+}
+
+
+#pent-box{
+      display: block;
+  margin-top:-2.5vw;
+  margin-left: -6vw;
+}
+.pent-line{
+
+   width: 12vw;
+    height: 0.2vw;
+    background-color: #027B98;
+    position: relative;
+ border-radius: 5%;
+
+  margin: 3.2vw 0vw 3vw 3.5vw;
+}
+
+#note-box{
+
+  height: 22vw;
+  width: 5vw;
+  margin:-5.5vw -4.5vw;
+visibility: hidden;
+  border: 2px solid black;
+
+}
+
+.note{
+   height: 1.2vw;
+  width: 2.3vw;
+
+  border: 2px solid  #FFA365;
+  border-radius: 50%;
+margin-top:0.5vw;
+marging-bottom:1vw; }
+
+#name-box{
+  display: block;
+  width: 3vw;
+    height: 25vw;
+  visibility: hidden;
+  border: 2px solid black;
+  margin: -5vw 0 1vw 6vw;
+
+
+}
+.name{
+   text-align: center;
+   color: #FFA365;
+  width: 3vw;
+    height: 1.7vw;
+   	font-family: 'Raleway', sans-serif;
+	font-size: 0.8vw;
+
+
+}
+
+
+#flatBox{
+    position:absolute;
+  height: 25vw;
+  width: 1.2vw;
+  margin:-5.5vw 3vw;
+   display: block;
+  left:21.5%;
+  visibility: hidden;
+  border: 2px solid black;
+}
+.flat{
+   color: #FFA365;
+  width: 3vw;
+    height: 1.7vw;
+  font-weight: bold;
+   	font-family: 'Raleway', sans-serif;
+	font-size: 1.5vw;
+
+}
+
+#clef{
+    width: 3vw;
+    height: 8vw;
+   margin: 6.5vw 0vw 1vw 12vw;
+
+}
+
+
+.extra-line{
+
+   width: 3vw;
+    height: 0.2vw;
+    background-color: #027B98;
+    position: relative;
+ border-radius: 5%;
+ visibility: hidden;
+  left: 70%;
+}
+
+
+
+#flatname-box{
+   position:absolute;
+  height: 25vw;
+  width: 0.5vw;
+  margin:-5.5vw 0vw;
+   display: block;
+visibility: hidden;
+  left:15%;
+  font-weight:bold;
+
+}
+
+
+
+
+
+#showFreq{
+position: relative;
+  color:#00AAE6;
+padding: 2vw 0 0 0vw;
+
+margin-left: 30vw;
+}
+
+
+#victoryPic
+{position:absolute;
+  width:40vw;
+  height:40vw;
+  margin-left:30vw;
+  z-index:40;
+  top:55%;
+visibility: hidden;
+}
+
+#nopePic
+{position:absolute;
+  width:40vw;
+  height:30vw;
+  margin-left:30vw;
+  z-index:40;
+  top:55%;
+visibility: hidden;
+}
+
+.errorBox{
+  position:absolute;
+  width:50vw;
+  height:30vw;
+  left:-10%;
+bottom: 30%;
+}
+
+
+.meter{
+  display: block;
+  width: 273px;
+  height: 155px;
+  margin: 0 auto;
+}
+
+#meter-left{
+  transform: skewX(-1.4bdeg) skewY(0deg);
+  stroke-width: 26;
+  stroke-dashoffset:280;
+  stroke-dasharray: 180 400;
+  stroke: #2fc9ff;
+  fill: none;
+
+}
+
+#meter-center{
+transform: skewX(1deg) skewY(-0.1deg);
+  stroke-width: 31;
+  stroke-dashoffset: 75;
+  stroke-dasharray: 50 200;
+  stroke: #a3cd3b;
+
+  fill: none;}
+
+  #meter-right{
+  transform: skewX(3deg) skewY(-1deg);
+  stroke-width: 26;
+  stroke-dashoffset: 350;
+  stroke-dasharray: 200 600;
+  stroke: #d22800;
+  fill: none;
+}
+
+#meter-clock{
+  transform: rotate(-54deg);
+  transform-origin: 137px 146px;
+  fill: black;
+
+}
+
+#meter-circle{
+fill:black;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.percentageError{
+ margin-left:72vw;
+  font-size:1.5vw;
+  color: #ffa365;
+  margin-bottom:1vw;
+  margin-top: -3vw;
+}
+
+
+.properties {
+margin-left: 80vw;
+font-size: 1.5vw;
+
+}
+
+.properties.inactive.property {
+  color: #aaa;
+}
+
+.property {
+  position: relative;
+  color:#00AAE6;
+  padding: 2vw 0 0 0vw;
+}
+
+.property.value {
+  text-decoration: underline;
+  color: blue;
+  font-weight: bold;
+}
+
+
+
+#searchButton {
+  position:absolute;
+  width: 7vw;
+  height:5vw;
+  left:88%;
+  font-size: 1vw;
+ top:15%;
+   border-radius: 50%;
+}
