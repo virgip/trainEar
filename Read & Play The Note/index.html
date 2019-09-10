@@ -1,0 +1,126 @@
+<!-- This line removes any default padding and style. You might only need one of these values set -->
+<link rel="stylesheet" type="text/css" href="RPNstyle.css" />
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<div id=layout>
+
+  <a href="http://trainear-home.surge.sh/"><i id="home-icon" class="icon fas fa-home fa-xs"><div  class="icons-text">Home</div></i></a>
+<button id ="speakerModeButton" class= "button fade">LOUDSPEAKER MODE</button>
+  <div id="title">Read & Play The Note</div>
+
+  <button id ="pianoModeButton" class= "button fade">PIANO MODE</button>
+
+  <button id="searchButton" class= "button fade" onClick="searchDevice()">Search device</button>
+<div id="properties" class="properties inactive">
+  <div class="property">
+    <span id="connected" class="value"></span></div>
+</div>
+
+  <div class="instruction-box"><i id="language-icon" class="icon fas fa-language fa-1.8x"></i>
+    <span id="languageIconText" class="icons-text">CHANGE LANGUAGE ITA|ENG</span>
+    <div id="instruction"></div>
+  </div>
+
+  <i id="hide-graph" class="icon far fa-lightbulb" onclick="hideGraph()"></i>
+  <i id="notation-icon" class="icon fas fa-music fa-1.5x"></i>
+
+  <span  id="notation-text" class="icons-text">Change Notation</span>
+
+  <img id="victoryPic" src="https://66.media.tumblr.com/c449e9d6dedc3937b360da5c415e3d70/tumblr_pu9ki74uT11tt7f73o1_1280.png" alt="you-rock">
+  <img id="nopePic" src="https://66.media.tumblr.com/d6244f75da685fbbcbbbba07f12e2262/tumblr_pud7vvLMi31tt7f73o1_1280.png" alt="try-again">
+
+  <div id="randg-box">
+
+    <div id="graph-box">
+
+
+
+
+
+      <img id="clef" src="https://66.media.tumblr.com/071966bd549929223505c69d96f91682/tumblr_ptnjqvZyIw1tt7f73o1_1280.png" alt="Clef" >
+
+      <div id="pent-box">
+        <div class="pent-line"></div>
+        <div class="pent-line"></div>
+        <div class="pent-line"></div>
+        <div class="pent-line"></div>
+        <div class="pent-line"></div>
+        <div id="extraline"class="extra-line"></div>
+      </div>
+
+      <div id="flatBox">
+        <div id="bModified" class=" flat" >b</div>
+          <div id="aModified" class="flat"></div>
+          <div id="gModified" class="flat"></div>
+          <div id="fModified" class="flat"></div>
+          <div id="eModified"class=" flat"></div>
+          <div id="dModified" class=" flat"></div>
+          <div id="cModified"class=" flat">b</div>
+      </div>
+
+      <div id="name-box">
+        <div id= "bn" class="b1 name"></div>
+                <div id= "an" class="a1 name"></div>
+                <div id= "gn" class="g1 name"></div>
+                <div id= "fn" class="f1 name"></div>
+                <div id= "en" class="e1 name"></div>
+                <div id= "dn" class="d1 name"></div>
+                <div id= "cn" class="c1 name"></div>
+      </div>
+
+      <div id="note-box">
+        <div class="b1 note"></div>
+        <div class="a1 note"></div>
+        <div class="g1 note"></div>
+        <div class="f1 note"></div>
+        <div class="e1 note"></div>
+        <div class="d1 note"></div>
+        <div class="c1 note"></div>
+      </div>
+
+    </div>
+
+    <canvas></canvas>
+<button id="startButton" class=" button fade" onclick="generateRequest()">START</button>
+
+    <i id="hide-freq" class="icon far fa-lightbulb" ></i>
+
+    <div id= "showFreq"> Current Frequency: <br><span class='center value'></span></div>
+
+  </div>
+
+
+
+  <div class="section">
+    <button id ="playStopButton" class= " button fade">PLAY</button>
+    <button id ="answerButton" class= "button fade" >SET ANSWER</button>
+    <div class="box">
+  <div class="errorBox">
+    <svg class="meter">
+      <circle id="meter-left" r="96" cx="135" cy="142" />
+        <circle id="meter-right" r="100" cx="135" cy="150" />
+      <circle id="meter-center" r="96" cx="136" cy="142" />
+
+      <polygon id="meter-clock"points="129,145 210,90 145,145"/>
+      <circle id="meter-circle" r="10" cx="137" cy="145" />
+      <input  type="range" min="0" max="100">
+    </svg>
+  </div>
+  </div>
+
+</div>
+
+  <div class="centralText percentageError" >Too low! &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Too high!</div>
+
+  <div id="centralText" class="icons-text">How to use Micro Bit's buttons: Press <b>A</b> to set the answer; press <b>B</b> to start/stop the Micro Bit's sound</div>
+
+
+
+<meta charset="UTF-8">
+<script language="javascript" type="text/javascript" src="microBit.js"></script>
+
+<!-- Uncomment lines below to include extra p5 libraries -->
+<!-- <script language="javascript" src="libraries/p5.sound.js"></script>-->
+<script language="javascript" type="text/javascript" src="RPNscript.js"></script>
