@@ -20,7 +20,7 @@ What we would like to achieve throught this project is creating a tool for the m
  * Headphones are recommended to improve the experience
 
 ## How to start
-* Connect Micro Bit via USB to your device and inject the provided code, you can download it here: https://makecode.microbit.org/53398-89763-46381-34336
+* Connect Micro Bit via USB to your device and inject the provided code, you can download it from the folder above.
 * Disconnect the USB cable from Micro Bit and plug Micro Bit to its battery supply.
 * Open the web-app: http://trainear-home.surge.sh/
 * Choose an exercise
