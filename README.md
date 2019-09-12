@@ -37,20 +37,18 @@ What we would like to achieve throught this project is creating a tool for the m
  Micro Bit's buttons are used to perform the same functions as the buttons on the interface. 
  
 ### Pitch Reproduction  
-Link: http://trainear-pitch.surge.sh/ <br>
+
 This is considered the easiest execise: the user has just to listen to a note and then try to reproduce the same note either with the same pitch or with a higher/lower one (different octaves), accordingly to what is written as request each different time.
 
 ### Interval Reproduction
-Link: http://trainear-intervals.surge.sh/ <br>
 The idea behind this exercise is similar to the one of the previous one, but instead of reproducing the same note, the user is asked to find a tone set to a specific distance from the given one. In order to help the users to learn better and to really improve their skills, it's possible to set three distinct levels of difficulty, which determine the number of intervals that can be asked. The interval is chosen randomply by a simulated slot machine.
 
 ### Chord Reproduction
-Link: http://trainear-chord.surge.sh/ <br>
 During this exercise, the user is asked to select the notes appearing in a specific chord. The large amount of possible choices is aimed to give the user exactly the kind of request they want to go for, as for a set of musical parameters (harmony scale, mode, scale root, chord root and chor type), to build the chord.
 The choices can be made in random order. Once the user is satisfied with their selections, they may press the red button in order to generate an actual request. The system then performs a random choice among all the selected values, one for each parameter, to finally build the chord. If no choice is made, the final selection is performed randomly among all the possible values for all the parameters. If the user decides to change the options, the red button has to be pressed again to make the changes effective and generate a new chord.
 
 ### Read and Play the Note
-Link: http://trainear-readandplay.surge.sh/ <br>
+
 This exercise is the most complicated one and requires the user to have at least a good relative pitch training, but actually absolute pitch is what comes about within this exercise. Indeed, in this case we require the user guesses the target note just by reading it on screen. This target note is chosen by chance by a simulated slot machine. Here's a trick: if you don't own absolute pitch, but all you need is a reference, known, note, you might press the "PLAY" button before the knob is connected via Bluetooth: this will allow you to listen to the starting note for the pitch-shifter-oscillator, which is an A4! ;j
 
 #### Future Developement
