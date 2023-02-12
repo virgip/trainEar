@@ -6,7 +6,7 @@
 
 
 
-A web-app for relative pitch training that makes use of Micro Bit's accelerometer turning it into a knob for playing simple music games. 
+A web-app for relative pitch training that makes use of Micro Bit's accelerometer turning it into a knob for playing simple ear training games. 
 
 Choose among 4 exercises about different topics and with various levels of difficulty to improve and challenge your ability to recognise and reproduce different notes, pitches, intervals and chords!
  
