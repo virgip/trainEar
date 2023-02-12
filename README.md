@@ -51,7 +51,7 @@ The choices can be made in random order. Once the user is satisfied with their s
 
 ### Read and Play the Note
 
-This exercise is the most complicated one and requires the user to have at least a good relative pitch training, but actually absolute pitch is what comes about within this exercise. Indeed, in this case we require that the user guess the target note just by reading it on screen. This target note is chosen by chance by a simulated slot machine. Here's a trick: if you don't own absolute pitch, but all you need is a reference, known note, you might press the "PLAY" button before the knob is connected via Bluetooth: this will allow you to listen to the starting note for the pitch-shifter-oscillator, which is an A4! ;j
+This exercise is the most complicated one and requires the user to have at least a good relative pitch training, but actually absolute pitch is what comes about within this exercise. Indeed, in this case we require that the user guess the target note just by reading it on screen. This target note is chosen by chance by a simulated slot machine. Here's a trick: if you don't own absolute pitch, but all you need is a reference, known note, you may press the "PLAY" button before the knob is connected via Bluetooth: this will allow you to listen to the starting note for the pitch-shifter-oscillator, which is an A4! ;j
 
 #### Future Developement
 * A point, score and challenges system will be added to boost the interest on the various games.
